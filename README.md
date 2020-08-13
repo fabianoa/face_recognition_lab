@@ -5,6 +5,7 @@ Proof of concept of techonologies related to face recognition problem.
 
 ## Architecture 
 
+![Architecture diagram](architecture_diagram.png)
 
 ## Application 
 
