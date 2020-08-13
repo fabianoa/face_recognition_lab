@@ -1,0 +1,15 @@
+docker/volumes
+src/backend/face_recognition_app/__pycache__
+src/etl/commom/__pycache__
+src/backend/face_recognition_app/serializers/__pycache__
+src/backend/face_recognition_app/models/__pycache__
+src/backend/face_recognition_app/business/__pycache__
+src/backend/face_recognition_app/business/__pycache__
+src/backend/face_recognition_app/commom/__pycache__
+src/backend/face_recognition_app/commom/__pycache__
+src/backend/face_recognition_app/endpoints/__pycache__
+src/backend/face_recognition_app/endpoints/__pycache__
+src/backend/face_recognition_app/endpoints/__pycache__
+src/backend/face_recognition_app/endpoints/__pycache__
+src/backend/face_recognition_app/endpoints/__pycache__
+src/backend/face_recognition_app/endpoints/__pycache__

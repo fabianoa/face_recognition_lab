@@ -1,0 +1,7 @@
+flask
+flask-restplus
+Flask-SQLAlchemy
+pytest
+faiss
+nvidia-361-dev
+boto3

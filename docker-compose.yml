@@ -1,0 +1,105 @@
+version: '3'
+
+services:
+  milvus:
+    image: milvusdb/milvus:0.10.0-cpu-d061620-5f3c00
+    ports:
+      - "19530:19530"
+      - "19121:19121"
+    volumes:
+      - ./docker/volumes/milvus/db:/var/lib/milvus/db
+      - ./docker/milvus/config:/var/lib/milvus/conf
+      - ./docker/volumes/milvus/logs:/var/lib/milvus/logs
+      - ./docker/volumes/milvus/wal:/var/lib/milvus/wal
+    depends_on:
+      - milvus-mysql
+    networks:
+      - backend
+          
+  milvus-em:
+    image: milvusdb/milvus-em:latest
+    ports:
+      - "3000:80"
+    depends_on:
+      - milvus
+    networks:
+      - backend
+  
+  milvus-mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: "MySql2019!"
+      MYSQL_DATABASE: "milvus"
+    ports:
+      - "3306:3306"
+    volumes:
+        - ./docker/volumes/mysql:/var/lib/mysql
+    networks:
+      - backend
+  
+  adminer:
+    image: adminer
+    ports:
+      - 8081:8080
+    depends_on:
+      - milvus-mysql
+    networks:
+      - backend
+
+  minio:
+    image: minio/minio
+    container_name: project_minio
+    volumes:
+       - "./data:/data"
+    ports:
+       - "9000:9000"
+    environment:
+      - MINIO_ACCESS_KEY=AKIAIOSFODNN7EXAMPLE
+      - MINIO_SECRET_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+    entrypoint:
+      - minio 
+      - server 
+      - /data
+    networks:
+      - backend
+  
+  backend_server:
+    restart: always
+    user: root
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+    image: backend_server
+    container_name: backend_server
+    volumes:
+       - ./data:/data:rw
+       - ./models:/models:rw
+    ports:
+       - "5000:80"
+    networks:
+       - backend
+       - frontend
+    depends_on:
+       - milvus  
+
+  frontend_server:
+    restart: always
+    user: root
+    build:
+      context: ./src/frontend
+      dockerfile: Dockerfile
+    image: frontend_server
+    container_name: frontend_server
+    ports:
+      - "5001:80"
+    networks:
+      - frontend
+    depends_on:
+      - backend_server  
+  
+networks:
+   backend:
+     driver: bridge
+   frontend:
+     driver: bridge
+ 

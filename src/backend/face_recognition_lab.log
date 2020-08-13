@@ -1,0 +1,1350 @@
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [30/Jun/2020 17:27:56] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 17:27:56] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 17:27:56] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 17:27:56] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 17:27:56] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 17:27:56] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=Embeddings.get_embedding_image(indices[n])
+AttributeError: type object 'Embeddings' has no attribute 'get_embedding_image'
+127.0.0.1 - - [30/Jun/2020 17:28:15] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=image.get_embedding_image(indices[n])
+AttributeError: type object 'Embeddings' has no attribute 'get_embedding_image'
+127.0.0.1 - - [30/Jun/2020 17:29:18] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=image.get_embedding_image(indices[n])
+AttributeError: module 'face_recognition_app.models.images' has no attribute 'get_embedding_image'
+127.0.0.1 - - [30/Jun/2020 17:30:21] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=image.get_image(indices[n])
+AttributeError: module 'face_recognition_app.models.images' has no attribute 'get_embedding_image'
+127.0.0.1 - - [30/Jun/2020 17:31:14] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=image.get_image(indices[n])
+AttributeError: module 'face_recognition_app.models.images' has no attribute 'get_image'
+127.0.0.1 - - [30/Jun/2020 17:31:56] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=Images.get_image(indices[n])
+NameError: name 'Images' is not defined
+127.0.0.1 - - [30/Jun/2020 17:36:01] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [30/Jun/2020 17:38:15] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 17:39:24] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 17:40:23] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/fabiano/anaconda3/lib/python3.7/socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/httpsession.py", line 263, in send
+    chunked=self._chunked(request.headers),
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/urllib3/util/retry.py", line 376, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/fabiano/anaconda3/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/awsrequest.py", line 92, in _send_request
+    method, url, body, headers, *args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/fabiano/anaconda3/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/awsrequest.py", line 119, in _send_output
+    self.send(msg)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/awsrequest.py", line 203, in send
+    return super(AWSConnection, self).send(str)
+  File "/home/fabiano/anaconda3/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <botocore.awsrequest.AWSHTTPConnection object at 0x7f5a3407ea50>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=Images.get_image_from_s3(indices[n])
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/images.py", line 27, in get_image_from_s3
+    data=s3.Bucket('images').download_file(file_name, image_path)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/s3/inject.py", line 246, in bucket_download_file
+    ExtraArgs=ExtraArgs, Callback=Callback, Config=Config)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/s3/inject.py", line 172, in download_file
+    extra_args=ExtraArgs, callback=Callback)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/tasks.py", line 255, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/download.py", line 343, in _submit
+    **transfer_future.meta.call_args.extra_args
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 622, in _make_api_call
+    operation_model, request_dict, request_context)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 641, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/endpoint.py", line 102, in make_request
+    return self._send_request(request_dict, operation_model)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/endpoint.py", line 137, in _send_request
+    success_response, exception):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/endpoint.py", line 256, in _needs_retry
+    caught_exception=caught_exception, request_dict=request_dict)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/hooks.py", line 356, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/hooks.py", line 228, in emit
+    return self._emit(event_name, kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/hooks.py", line 211, in _emit
+    response = handler(**kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/retryhandler.py", line 183, in __call__
+    if self._checker(attempts, response, caught_exception):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/retryhandler.py", line 251, in __call__
+    caught_exception)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/retryhandler.py", line 277, in _should_retry
+    return self._checker(attempt_number, response, caught_exception)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/retryhandler.py", line 317, in __call__
+    caught_exception)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/retryhandler.py", line 223, in __call__
+    attempt_number, caught_exception)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/retryhandler.py", line 359, in _check_caught_exception
+    raise caught_exception
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/endpoint.py", line 200, in _do_get_response
+    http_response = self._send(request)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/endpoint.py", line 269, in _send
+    return self.http_session.send(request)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/httpsession.py", line 283, in send
+    raise EndpointConnectionError(endpoint_url=request.url, error=e)
+botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "http://minio:9000/images/087774.jpg"
+127.0.0.1 - - [30/Jun/2020 17:41:23] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=Images.get_image_from_s3(indices[n])
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/images.py", line 27, in get_image_from_s3
+    data=s3.Bucket('images').download_file(file_name, image_path)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/s3/inject.py", line 246, in bucket_download_file
+    ExtraArgs=ExtraArgs, Callback=Callback, Config=Config)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/s3/inject.py", line 172, in download_file
+    extra_args=ExtraArgs, callback=Callback)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/tasks.py", line 255, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/download.py", line 343, in _submit
+    **transfer_future.meta.call_args.extra_args
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 635, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (404) when calling the HeadObject operation: Not Found
+127.0.0.1 - - [30/Jun/2020 17:42:16] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=Images.get_image_from_s3(indices[n])
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/images.py", line 27, in get_image_from_s3
+    data=s3.Bucket('images').download_file(file_name, image_path)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/s3/inject.py", line 246, in bucket_download_file
+    ExtraArgs=ExtraArgs, Callback=Callback, Config=Config)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/s3/inject.py", line 172, in download_file
+    extra_args=ExtraArgs, callback=Callback)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/tasks.py", line 255, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/s3transfer/download.py", line 343, in _submit
+    **transfer_future.meta.call_args.extra_args
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 635, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (404) when calling the HeadObject operation: Not Found
+127.0.0.1 - - [30/Jun/2020 17:44:06] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=Images.get_image_from_s3(indices[n])
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/images.py", line 28, in get_image_from_s3
+    data = s3.get_object('images', image_path)
+AttributeError: 's3.ServiceResource' object has no attribute 'get_object'
+127.0.0.1 - - [30/Jun/2020 17:55:03] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=Images.get_image_from_s3(indices[n])
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/images.py", line 28, in get_image_from_s3
+    data = s3.get_object('images', image_path)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 314, in _api_call
+    "%s() only accepts keyword arguments." % py_operation_name)
+TypeError: get_object() only accepts keyword arguments.
+127.0.0.1 - - [30/Jun/2020 17:58:40] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=Images.get_image_from_s3(indices[n])
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/images.py", line 29, in get_image_from_s3
+    data = object.get()['Body']
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 635, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.NoSuchKey: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+127.0.0.1 - - [30/Jun/2020 18:06:47] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 153, in post
+    search_result,execution_time=self.bus.search_faces(file_content,threshold,k,source)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py", line 107, in search_faces
+    result.append(func(face_embedding,threshold,k))
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py", line 42, in search_faiss
+    img=Images.get_image_from_s3(indices[n])
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/images.py", line 29, in get_image_from_s3
+    data = object.get()['Body']
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 316, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 608, in _make_api_call
+    api_params, operation_model, context=request_context)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 654, in _convert_to_request_dict
+    api_params, operation_model, context)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/client.py", line 686, in _emit_api_params
+    params=api_params, model=operation_model, context=context)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/hooks.py", line 356, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/hooks.py", line 228, in emit
+    return self._emit(event_name, kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/hooks.py", line 211, in _emit
+    response = handler(**kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/botocore/handlers.py", line 236, in validate_bucket_name
+    raise ParamValidationError(report=error_msg)
+botocore.exceptions.ParamValidationError: Parameter validation failed:
+Invalid bucket name "images/img_align_celab": Bucket name must match the regex "^[a-zA-Z0-9.\-_]{1,255}$" or be an ARN matching the regex "^arn:(aws).*:s3:[a-z\-0-9]+:[0-9]{12}:accesspoint[/:][a-zA-Z0-9\-]{1,63}$"
+127.0.0.1 - - [30/Jun/2020 18:15:53] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+An unhandled exception occurred.
+Traceback (most recent call last):
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/fabiano/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py", line 159, in post
+    result.append({'file_name':face[0],'image':base64.b64encode(face[1]).decode('utf-8'),'distance':face[2]})
+  File "/home/fabiano/anaconda3/lib/python3.7/base64.py", line 58, in b64encode
+    encoded = binascii.b2a_base64(s, newline=False)
+TypeError: a bytes-like object is required, not 'StreamingBody'
+127.0.0.1 - - [30/Jun/2020 18:17:46] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [30/Jun/2020 18:20:50] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 18:21:16] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 18:21:34] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 18:22:00] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 18:22:31] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 18:23:04] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 18:23:34] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Jun/2020 18:23:56] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 144-050-735
+127.0.0.1 - - [01/Jul/2020 07:55:07] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 07:55:07] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 07:55:12] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [01/Jul/2020 07:55:23] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 07:55:45] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 247-000-132
+127.0.0.1 - - [01/Jul/2020 07:57:59] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 07:58:09] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 07:58:36] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 07:59:33] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 310-183-733
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 374-959-794
+127.0.0.1 - - [01/Jul/2020 08:05:09] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:05:09] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:05:16] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:05:17] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:05:17] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:05:17] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [01/Jul/2020 08:05:17] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [01/Jul/2020 08:05:18] "[37mGET /swaggerui/favicon-16x16.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:05:18] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:05:43] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 333-748-969
+127.0.0.1 - - [01/Jul/2020 08:07:17] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 159-887-305
+127.0.0.1 - - [01/Jul/2020 08:08:40] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [01/Jul/2020 08:08:40] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 538-264-628
+127.0.0.1 - - [01/Jul/2020 08:10:35] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:10:40] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:10:52] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 250-477-934
+127.0.0.1 - - [01/Jul/2020 08:15:53] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 159-257-150
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 197-298-337
+127.0.0.1 - - [01/Jul/2020 08:20:03] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 297-859-006
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 150-364-750
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/models/embeddings.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 303-979-313
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 208-081-260
+127.0.0.1 - - [01/Jul/2020 08:32:58] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:33:26] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:34:02] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:34:28] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:39:58] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [01/Jul/2020 08:40:09] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/endpoints/facialRecognitionFacade.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 288-094-321
+127.0.0.1 - - [01/Jul/2020 08:41:50] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:42:17] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:43:05] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:43:27] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Jul/2020 08:44:19] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/__init__.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/__init__.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 884-664-945
+127.0.0.1 - - [07/Jul/2020 14:49:18] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 14:49:18] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 14:49:18] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 14:49:18] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 14:49:18] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 14:49:19] "[37mGET /swaggerui/favicon-16x16.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 14:49:20] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 14:49:51] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 219-373-160
+127.0.0.1 - - [07/Jul/2020 14:53:27] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 14:53:38] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 273-054-017
+127.0.0.1 - - [07/Jul/2020 14:55:51] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 14:56:12] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 179-048-650
+127.0.0.1 - - [07/Jul/2020 15:00:02] "[37mPOST /facialrecognition/face_align HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 246-480-044
+127.0.0.1 - - [07/Jul/2020 15:01:54] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 15:01:56] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 15:01:57] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 15:01:59] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 15:02:01] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 15:02:13] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 130-286-016
+127.0.0.1 - - [07/Jul/2020 15:04:20] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 15:04:25] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 15:04:31] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 221-319-114
+127.0.0.1 - - [07/Jul/2020 15:12:45] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 15:18:46] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 212-486-204
+127.0.0.1 - - [07/Jul/2020 17:51:52] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 148-925-437
+127.0.0.1 - - [07/Jul/2020 18:18:39] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 18:18:41] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 18:18:45] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 366-035-947
+127.0.0.1 - - [07/Jul/2020 18:24:57] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 18:25:09] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Jul/2020 18:25:14] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 102-411-249
+127.0.0.1 - - [07/Jul/2020 18:34:27] "[1m[35mPOST /facialrecognition/face_align HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 180-206-408
+127.0.0.1 - - [07/Jul/2020 18:36:54] "[1m[31mPOST /facialrecognition/face_align HTTP/1.1[0m" 400 -
+127.0.0.1 - - [07/Jul/2020 18:36:54] "[1m[31mPOST /facialrecognition/face_align HTTP/1.1[0m" 400 -
+127.0.0.1 - - [07/Jul/2020 18:36:54] "[1m[31mPOST /facialrecognition/face_align HTTP/1.1[0m" 400 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 293-518-117
+127.0.0.1 - - [07/Jul/2020 19:04:05] "[1m[31mPOST /facialrecognition/face_align HTTP/1.1[0m" 400 -
+127.0.0.1 - - [07/Jul/2020 19:04:40] "[1m[31mPOST /facialrecognition/face_align HTTP/1.1[0m" 400 -
+127.0.0.1 - - [07/Jul/2020 19:05:01] "[1m[31mPOST /facialrecognition/face_align HTTP/1.1[0m" 400 -
+127.0.0.1 - - [07/Jul/2020 19:05:49] "[1m[31mPOST /facialrecognition/face_align HTTP/1.1[0m" 400 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 317-027-911
+127.0.0.1 - - [07/Jul/2020 19:24:47] "[1m[31mPOST /facialrecognition/face_align HTTP/1.1[0m" 400 -
+127.0.0.1 - - [07/Jul/2020 19:25:50] "[1m[31mPOST /facialrecognition/face_align HTTP/1.1[0m" 400 -
+127.0.0.1 - - [07/Jul/2020 19:25:50] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 19:25:50] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 19:25:50] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Jul/2020 19:25:51] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 19:25:51] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Jul/2020 19:25:51] "[37mGET /swaggerui/favicon-16x16.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 19:25:52] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Jul/2020 19:26:14] "[37mPOST /facialrecognition/face_align HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 693-241-152
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 329-283-388
+127.0.0.1 - - [09/Jul/2020 09:24:47] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jul/2020 09:24:48] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jul/2020 09:24:48] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jul/2020 09:24:48] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jul/2020 09:24:48] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jul/2020 09:24:49] "[37mGET /swaggerui/favicon-16x16.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jul/2020 09:24:49] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jul/2020 09:31:46] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jul/2020 09:31:57] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 187-068-372
+127.0.0.1 - - [09/Jul/2020 10:02:27] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 215-255-118
+127.0.0.1 - - [09/Jul/2020 10:04:59] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 958-449-813
+127.0.0.1 - - [09/Jul/2020 10:06:39] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 196-090-995
+127.0.0.1 - - [09/Jul/2020 10:08:21] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 184-213-842
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 160-373-632
+127.0.0.1 - - [09/Jul/2020 10:27:27] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 129-265-723
+127.0.0.1 - - [09/Jul/2020 10:28:44] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+127.0.0.1 - - [09/Jul/2020 10:28:44] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 769-955-911
+127.0.0.1 - - [09/Jul/2020 10:38:31] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 253-775-962
+127.0.0.1 - - [09/Jul/2020 10:41:19] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 335-037-909
+127.0.0.1 - - [09/Jul/2020 10:42:41] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 100-138-921
+127.0.0.1 - - [09/Jul/2020 10:44:08] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 151-594-306
+127.0.0.1 - - [09/Jul/2020 10:46:24] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+127.0.0.1 - - [09/Jul/2020 10:46:25] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 760-875-652
+127.0.0.1 - - [09/Jul/2020 10:50:25] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+127.0.0.1 - - [09/Jul/2020 10:50:33] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 535-615-697
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 152-478-396
+127.0.0.1 - - [10/Jul/2020 11:19:08] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [10/Jul/2020 11:19:34] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [10/Jul/2020 11:19:39] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:19:40] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:19:40] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:19:40] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Jul/2020 11:19:40] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [10/Jul/2020 11:19:41] "[37mGET /swaggerui/favicon-16x16.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:19:42] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:19:56] "[1m[35mPOST /facialrecognition/face_search HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 273-840-961
+127.0.0.1 - - [10/Jul/2020 11:23:43] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:37:38] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:38:08] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:38:54] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:39:29] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:39:49] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:40:10] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:40:37] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:41:12] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:41:29] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:41:51] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:42:09] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:42:36] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 11:44:35] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 12:33:57] "[37mPOST /facialrecognition/face_align HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 12:35:07] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 12:35:31] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 12:36:03] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 12:36:20] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 12:36:55] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 18:06:23] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jul/2020 18:06:45] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 311-637-133
+127.0.0.1 - - [11/Jul/2020 07:36:39] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 146-509-586
+127.0.0.1 - - [11/Jul/2020 07:37:46] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 160-820-171
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 532-868-136
+127.0.0.1 - - [11/Jul/2020 07:42:15] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 102-928-978
+127.0.0.1 - - [11/Jul/2020 07:44:21] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+127.0.0.1 - - [11/Jul/2020 07:44:31] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+127.0.0.1 - - [11/Jul/2020 07:44:38] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 291-105-376
+127.0.0.1 - - [11/Jul/2020 07:45:50] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 117-228-296
+127.0.0.1 - - [11/Jul/2020 07:49:03] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 239-307-784
+127.0.0.1 - - [11/Jul/2020 07:51:53] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 07:52:02] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+127.0.0.1 - - [11/Jul/2020 07:54:05] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 754-190-021
+127.0.0.1 - - [11/Jul/2020 07:55:36] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 07:55:59] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 07:56:26] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 308-800-181
+127.0.0.1 - - [11/Jul/2020 08:00:04] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 269-759-441
+127.0.0.1 - - [11/Jul/2020 08:02:55] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:03:10] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 126-094-817
+127.0.0.1 - - [11/Jul/2020 08:04:26] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:04:37] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 208-255-394
+127.0.0.1 - - [11/Jul/2020 08:05:50] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:05:51] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 175-970-114
+127.0.0.1 - - [11/Jul/2020 08:07:23] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 721-766-795
+127.0.0.1 - - [11/Jul/2020 08:08:38] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:08:38] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:08:44] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 184-336-851
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 142-423-335
+127.0.0.1 - - [11/Jul/2020 08:10:33] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 257-329-289
+127.0.0.1 - - [11/Jul/2020 08:11:42] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:11:42] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 629-871-902
+127.0.0.1 - - [11/Jul/2020 08:14:20] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 337-981-505
+127.0.0.1 - - [11/Jul/2020 08:15:12] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:15:30] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:15:47] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:16:01] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:16:16] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 318-786-192
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 258-029-250
+127.0.0.1 - - [11/Jul/2020 08:24:26] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:24:44] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:24:59] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:25:14] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:25:25] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:25:36] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:25:50] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 224-429-403
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 120-219-966
+127.0.0.1 - - [11/Jul/2020 08:40:43] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 163-252-079
+127.0.0.1 - - [11/Jul/2020 08:42:21] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:42:48] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 116-125-823
+127.0.0.1 - - [11/Jul/2020 08:46:43] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:46:53] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 120-985-393
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 144-940-870
+127.0.0.1 - - [11/Jul/2020 08:55:18] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 127-490-455
+127.0.0.1 - - [11/Jul/2020 08:57:33] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:57:58] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 08:58:04] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 266-221-597
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 115-063-286
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 165-409-043
+127.0.0.1 - - [11/Jul/2020 09:01:19] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:01:31] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:02:14] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:02:21] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 771-981-149
+127.0.0.1 - - [11/Jul/2020 09:04:29] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:04:38] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 212-576-844
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 368-353-565
+127.0.0.1 - - [11/Jul/2020 09:06:47] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 219-791-122
+127.0.0.1 - - [11/Jul/2020 09:08:19] "[1m[35mPOST /facialrecognition/face_detection HTTP/1.1[0m" 500 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 102-047-787
+127.0.0.1 - - [11/Jul/2020 09:09:20] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:09:29] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:09:42] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:09:56] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:10:17] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:10:33] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:10:43] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:11:07] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:11:29] "[37mPOST /facialrecognition/face_align HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:12:28] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:12:46] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:13:20] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:13:51] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 131-639-217
+127.0.0.1 - - [11/Jul/2020 09:16:46] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:17:11] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:18:14] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:18:31] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:19:13] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:19:55] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 09:20:20] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 280-741-826
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 233-443-352
+127.0.0.1 - - [11/Jul/2020 10:00:24] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 10:00:46] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 329-816-639
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 101-411-177
+127.0.0.1 - - [11/Jul/2020 11:12:06] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Jul/2020 11:12:25] "[37mPOST /facialrecognition/face_align HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/commom/face_recognition.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 242-389-966
+127.0.0.1 - - [13/Jul/2020 13:56:24] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 13:56:51] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 13:57:14] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 13:57:42] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 13:58:43] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 13:59:14] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 13:59:48] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py', reloading
+ * Detected change in '/home/fabiano/ml-workspace/face_regognition_lab/src/backend/face_recognition_app/business/facialRecognitionBus.py', reloading
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 684-004-865
+127.0.0.1 - - [13/Jul/2020 14:02:30] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:02:52] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:03:10] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:03:28] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:03:45] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:04:01] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:04:18] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:04:34] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:05:07] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:05:21] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:05:35] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Jul/2020 14:05:49] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Jul/2020 14:01:10] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 07:18:15] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 07:18:51] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 07:19:30] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 07:19:55] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 07:20:15] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+>>>>> Starting development server at http://None/ <<<<<
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with inotify reloader
+>>>>> Starting development server at http://None/ <<<<<
+ * Debugger is active!
+ * Debugger PIN: 710-685-367
+127.0.0.1 - - [15/Jul/2020 08:38:16] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:38:16] "[37mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:38:16] "[37mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:38:16] "[37mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:38:16] "[37mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:38:17] "[37mGET /swaggerui/favicon-16x16.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:38:17] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:38:40] "[37mPOST /facialrecognition/face_align HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:39:10] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:39:10] "[37mGET /swagger.json HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:39:29] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:39:47] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:40:11] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:40:30] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:40:42] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:41:02] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:41:15] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:41:25] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:41:39] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 08:45:33] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:24:53] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:25:31] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:26:09] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:26:38] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:26:59] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:27:38] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:28:04] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:28:25] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:28:58] "[37mPOST /facialrecognition/face_detection HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:33:40] "[37mPOST /facialrecognition/face_align HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:45:42] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:47:11] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 11:48:20] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 12:09:39] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 12:10:37] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 12:11:14] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 12:12:05] "[37mPOST /facialrecognition/face_search HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Jul/2020 13:53:09] "[37mPOST /facialrecognition/face_verification HTTP/1.1[0m" 200 -

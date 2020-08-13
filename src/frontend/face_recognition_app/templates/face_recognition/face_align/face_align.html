@@ -1,0 +1,173 @@
+<!-- app/templates/admin/departments/department.html -->
+
+{% extends "base.html" %}
+{% block title %}
+Face Recognition
+{% endblock %}
+
+
+{% block head %}
+<!-- Site Properties -->
+<!--<script src="{{ url_for('static', filename='login-page/jquery.js') }}"></script>-->
+<!--<script src="{{ url_for('static', filename='login-page/form.js') }}"></script>-->
+<!--<script src="{{ url_for('static', filename='login-page/transition.js') }}"></script>-->
+
+<style type="text/css">
+    body, {
+      background-color: rgb(255, 255, 255);
+      font-family: 'Mandali';
+      color: #474747;
+    }
+
+    button {
+       font-family: 'Mandali';
+
+}
+
+    body > .grid {
+      height: 100%;
+    }
+
+    .ui.large.form{
+    font-size: 1em;
+    }
+
+    /* Remove annoying extra border at bottom of form box */
+.ui.stacked.segment::after{
+  border:none;
+}
+
+
+</style>
+<script>
+      $(document)
+    .ready(function() {
+      $('.ui.form')
+        .form({
+          fields: {
+            file: {
+              identifier  : 'file',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter a brief description for the department'
+                },
+              ]
+            }
+          },
+          on: 'blur',
+          inline: false
+        })
+      ;
+    })
+  ;
+
+</script>
+{% endblock %}
+{% block body %}
+
+<div class="ui middle aligned center aligned grid" style="background-color:white; margin-top:0px;">
+    <div class="twelve wide column" style="margin-top:4em; margin-bottom:8em">
+        <div class="ui center aligned grid">
+
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <ul class="list" style="margin:auto">
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endwith %}
+
+            <div class="twelve wide column">
+                <h2 class="ui header"
+                    style="color: #74D7D7; font-family: Josefin Slab; font-weight:400; font-size:2.5em">
+                    Face alignment
+                </h2>
+            </div>
+
+            <div class="twelve wide left aligned column">
+                <form class="ui large form" method="post" enctype="multipart/form-data">
+                    {{ form.hidden_tag() }}
+                    <div class="ui stacked segment">
+                        <div class="field">
+                            <label>Image file</label>
+                            <div class="ui left icon input">
+                                <i class="building icon"></i>
+                                {{ form.fileName(placeholder="File Name") }}
+                        </div>
+                        <button class="ui fluid medium submit button" type="submit"
+                                style="background-color:#74D7D7; font-family: 'Mandali'">
+                        Detect and Align faces
+                        </button>
+                        
+                    </div>
+                    <div class="ui error message"></div>
+                </form>
+            </div>
+            {% if result %}
+            <center>
+              
+            <div class="sixteen wide column">
+              <table class="ui celled table">
+                <thead>
+                  <tr>
+                      <th><h2 class="ui header"
+                        style="color: #74D7D7; font-family: Josefin Slab; font-weight:400; font-size:2.5em">
+                        Input Image
+                        </h2>
+                  </th>
+                  </tr>
+                 </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                       <img src="data:image/jpeg;base64,{{input_image}}" alt="image for post" width="800">
+                     </td>
+                 </tr>  
+                </tbody>            
+
+              </table>
+
+              <table class="ui celled table">
+                <thead>
+                  <tr>
+                      <th><h2 class="ui header"
+                        style="color: #74D7D7; font-family: Josefin Slab; font-weight:400; font-size:2.5em">
+                        Result
+                      </h2>
+                      <th><h2 class="ui header"
+                        style="color: #74D7D7; font-family: Josefin Slab; font-weight:400; font-size:2.5em">
+                      </h2>
+                      <th><h2 class="ui header"
+                        style="color: #74D7D7; font-family: Josefin Slab; font-weight:400; font-size:2.5em">
+                      </h2>
+                  </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p style="color:#474747">On <b>{{execution_time}}</b> second(s), the following faces are currently present in the image:
+                      </p></td>
+                    </tr>
+                    <tr>
+                    {% for face in faces %} 
+                    <tr>
+                      <td>
+                        <img src="data:image/jpeg;base64,{{face}}" alt="image for post">
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+              </table>
+            </div>
+          </center>
+            
+            {% endif %}
+       
+        </div>
+    </div>
+</div>
+
+{% endblock %}
