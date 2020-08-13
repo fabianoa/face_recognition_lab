@@ -1,3 +1,4 @@
+data
 docker/volumes
 src/backend/face_recognition_app/__pycache__
 src/etl/commom/__pycache__
